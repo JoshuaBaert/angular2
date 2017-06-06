@@ -14,6 +14,7 @@ import {CoursesService} from './courses/courses.service';
 // Directives
 import { AutoGrowDirective } from './directives/auto-grow.directive';
 import { ImageComponent } from './image/image.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
@@ -22,7 +23,8 @@ import { ImageComponent } from './image/image.component';
     AppComponent,
     CoursesComponent,
     AutoGrowDirective,
-    ImageComponent
+    ImageComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -11,12 +11,18 @@ import { CoursesComponent } from './courses/courses.component';
 // Services
 import {CoursesService} from './courses/courses.service';
 
+// Directives
+import { AutoGrowDirective } from './directives/auto-grow.directive';
+import { ImageComponent } from './image/image.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    AutoGrowDirective,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

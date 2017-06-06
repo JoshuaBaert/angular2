@@ -4,18 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 
-// Components
-import { AppComponent } from './app.component';
-import { CoursesComponent } from './courses/courses.component';
-
 // Services
 import {CoursesService} from './courses/courses.service';
 
+
 // Directives
 import { AutoGrowDirective } from './directives/auto-grow.directive';
+
+
+// Components
+import { AppComponent } from './app.component';
+import { CoursesComponent } from './courses/courses.component';
 import { ImageComponent } from './image/image.component';
 import { ButtonComponent } from './button/button.component';
-
 
 
 @NgModule({

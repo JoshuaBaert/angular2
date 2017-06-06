@@ -1,9 +1,11 @@
-<div>
+<div class="container">
   <h1>{{title}}</h1>
   <hr>
   <br>
   
-  
+  <app-favorite
+    [isFavorite]="post.isFavorite"
+  ></app-favorite>
   
   <br>
   <hr>
@@ -17,5 +19,5 @@
   <br>
   
   app-courses
-  
+
 </div>

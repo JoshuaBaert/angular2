@@ -17,6 +17,7 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { ImageComponent } from './image/image.component';
 import { ButtonComponent } from './button/button.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ButtonComponent } from './button/button.component';
     CoursesComponent,
     AutoGrowDirective,
     ImageComponent,
-    ButtonComponent
+    ButtonComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

@@ -3,12 +3,20 @@
   <hr>
   <br>
   
-  <app-favorite
-    [is-favorite]="post.isFavorite"
-  ></app-favorite>
+  <app-like
+    [liked]="tweet.liked"
+    [totalLikes]="tweet.totalLikes"
+  ></app-like>
   
   <br>
   <hr>
+  app-favorite
+  <app-favorite
+    [is-favorite]="post.isFavorite"
+    (change)="onFavoriteChange($event)"
+  ></app-favorite>
+  
+  <br>
   
   app-button
   

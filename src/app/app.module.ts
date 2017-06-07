@@ -18,6 +18,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { ImageComponent } from './image/image.component';
 import { ButtonComponent } from './button/button.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { LikeComponent } from './like/like.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     AutoGrowDirective,
     ImageComponent,
     ButtonComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

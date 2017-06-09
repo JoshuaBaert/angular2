@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <h3>{{post.title}}</h3>
     <br>
-    {{post.body}}
+    {{post.body | summary:10}}
   `,
 })
 export class PipeComponent implements OnInit {

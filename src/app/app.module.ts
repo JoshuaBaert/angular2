@@ -12,6 +12,10 @@ import {CoursesService} from './courses/courses.service';
 import { AutoGrowDirective } from './directives/auto-grow.directive';
 
 
+// Pipes
+import { SummaryPipe } from './pipe/summary.pipe';
+
+
 // Components
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
@@ -19,6 +23,7 @@ import { ImageComponent } from './image/image.component';
 import { ButtonComponent } from './button/button.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { LikeComponent } from './like/like.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 
 @NgModule({
@@ -29,7 +34,9 @@ import { LikeComponent } from './like/like.component';
     ImageComponent,
     ButtonComponent,
     FavoriteComponent,
-    LikeComponent
+    LikeComponent,
+    PipeComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

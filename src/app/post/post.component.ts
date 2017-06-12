@@ -6,9 +6,9 @@ import { PostService } from './post.service';
   selector: 'app-post',
   template: `    
     <div *ngIf="isLoading">
-      <i class="fa-spinner fa-spin fa-3x"></i>
+      <i class="fa fa-spinner fa-pulse fa-3x"></i>
     </div>
-    <i class="fa-spinner fa-spin fa-3x"></i>
+    <i class="fa fa-spinner fa-pulse fa-3x"></i>
   `,
   styles: [`
     .test {

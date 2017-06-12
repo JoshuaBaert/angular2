@@ -5,9 +5,10 @@ import { PostService } from './post.service';
 @Component({
   selector: 'app-post',
   template: `    
-    <div>
-      test
+    <div *ngIf="isLoading">
+      <i class="fa-spinner fa-spin fa-3x"></i>
     </div>
+    <i class="fa-spinner fa-spin fa-3x"></i>
   `,
   styles: [`
     .test {
@@ -16,12 +17,17 @@ import { PostService } from './post.service';
   `],
 })
 export class PostComponent implements OnInit {
+  isLoading = true;
 
-  constructor(private postService: PostService) { }
+  constructor(private postService: PostService) {
+  }
 
   ngOnInit() {
     this.postService.getPosts()
-      .subscribe(data => console.log(data));
+      .subscribe(data => {
+        this.isLoading = false;
+        console.log(data);
+      });
   }
 
 }

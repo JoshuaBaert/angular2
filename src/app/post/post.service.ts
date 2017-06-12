@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Post } from '../models/post';
 
 @Injectable()
 
-export class PostService {
+export class PostService{
   private _url = 'https://jsonplaceholder.typicode.com/posts';
 
 
@@ -14,7 +15,7 @@ export class PostService {
       .map(res => res.json());
   }
 
-  createPost(post) {
+  createPost(post: Post) {
     return this._http.post(this._url, JSON.stringify(post))
       .map(res => res.json());
   }

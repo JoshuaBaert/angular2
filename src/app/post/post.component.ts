@@ -20,7 +20,7 @@ export class PostComponent implements OnInit {
   constructor(private postService: PostService) { }
 
   ngOnInit() {
-    this.postService.getPost()
+    this.postService.getPosts()
       .subscribe(data => console.log(data));
   }
 

@@ -9,7 +9,7 @@ export class PostService {
 
   constructor(private _http: Http) { }
 
-  getPost() {
+  getPosts() {
     return this._http.get(this._url)
       .map(res => res.json());
   }

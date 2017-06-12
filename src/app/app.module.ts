@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 
 // Services
-import {CoursesService} from './courses/courses.service';
+import { CoursesService } from './courses/courses.service';
+import { PostService } from './post/post.service';
 
 
 // Directives
@@ -24,6 +26,7 @@ import { ButtonComponent } from './button/button.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { LikeComponent } from './like/like.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -36,14 +39,18 @@ import { PipeComponent } from './pipe/pipe.component';
     FavoriteComponent,
     LikeComponent,
     PipeComponent,
-    SummaryPipe
+    SummaryPipe,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [CoursesService],
+  providers: [
+    CoursesService,
+    PostService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

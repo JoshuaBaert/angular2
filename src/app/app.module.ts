@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 
+
 // Services
 import { CoursesService } from './courses/courses.service';
 import { PostService } from './post/post.service';
@@ -27,6 +28,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { LikeComponent } from './like/like.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { PostComponent } from './post/post.component';
+
+
 
 
 @NgModule({

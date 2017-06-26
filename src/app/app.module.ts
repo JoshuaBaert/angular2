@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 import 'rxjs/add/operator/map';
 
 
@@ -48,7 +49,17 @@ import { PostComponent } from './post/post.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'courses',
+        component: CoursesComponent
+      },
+      {
+        path: 'like',
+        component: LikeComponent
+      },
+    ])
   ],
   providers: [
     CoursesService,

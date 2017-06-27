@@ -15,3 +15,4 @@ export class SummaryPipe implements PipeTransform {
   }
 
 }
+

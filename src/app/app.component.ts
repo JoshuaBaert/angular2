@@ -19,4 +19,8 @@ export class AppComponent {
   onFavoriteChange($event) {
     console.log($event);
   }
+
+  testFunc(test) {
+    confirm('yes??');
+  }
 }
